@@ -666,7 +666,7 @@ class MyIYUUAutoSeed(_PluginBase):
                 continue
             logger.info(f"开始检查下载器 {downloader} 的校验任务 ...")
             # 下载器
-            downloader_obj = self.__get_downloader(downloader)
+            downloader_obj = self.__get_downloader("transmission")
             # 获取下载器中的种子状态
             torrents, _ = downloader_obj.get_torrents(ids=recheck_torrents)
             if torrents:
