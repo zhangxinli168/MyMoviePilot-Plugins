@@ -26,7 +26,7 @@ from app.utils.http import RequestUtils
 from app.utils.string import StringUtils
 
 
-class IYUUAutoSeed(_PluginBase):
+class MyIYUUAutoSeed(_PluginBase):
     # 插件名称
     plugin_name = "IYUU自动辅种"
     # 插件描述
@@ -40,7 +40,7 @@ class IYUUAutoSeed(_PluginBase):
     # 作者主页
     author_url = "https://github.com/jxxghp"
     # 插件配置项ID前缀
-    plugin_config_prefix = "iyuuautoseed_"
+    plugin_config_prefix = "myiyuuautoseed_"
     # 加载顺序
     plugin_order = 17
     # 可使用的用户级别
