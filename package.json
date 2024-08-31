@@ -1,7 +1,7 @@
 {
     
     "MyIYUUAutoSeed": {
-        "name": "IYUU自动辅种",
+        "name": "MyIYUU自动辅种",
         "description": "基于IYUU官方Api实现自动辅种。",
         "labels": "做种,IYUU",
         "version": "1.9.5",
