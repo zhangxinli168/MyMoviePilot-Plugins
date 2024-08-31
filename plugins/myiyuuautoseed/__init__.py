@@ -28,7 +28,7 @@ from app.utils.string import StringUtils
 
 class MyIYUUAutoSeed(_PluginBase):
     # 插件名称
-    plugin_name = "IYUU自动辅种"
+    plugin_name = "MyIYUU自动辅种"
     # 插件描述
     plugin_desc = "基于IYUU官方Api实现自动辅种。"
     # 插件图标
@@ -36,7 +36,7 @@ class MyIYUUAutoSeed(_PluginBase):
     # 插件版本
     plugin_version = "1.9.5"
     # 插件作者
-    plugin_author = "jxxghp"
+    plugin_author = "zhang"
     # 作者主页
     author_url = "https://github.com/jxxghp"
     # 插件配置项ID前缀
