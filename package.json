@@ -6,21 +6,10 @@
         "labels": "做种,IYUU",
         "version": "1.9.5",
         "icon": "IYUU.png",
-        "author": "jxxghp",
+        "author": "zhang",
         "level": 2,
         "history": {
-            "v1.9.5": "Revert qBittorrent跳检之后自动开始",
-            "v1.9.4": "修复qBittorrent辅种后不会自动开始做种",
-            "v1.9.3": "修复Monika因缺少rsskey，种子下载失败的问题",
-            "v1.9.2": "适配馒头使用API下载种子",
-            "v1.9.1": "支持自定义辅种的种子分类",
-            "v1.9": "支持自定义辅种后标签，支持将站点名作为标签",
-            "v1.8.2": "qBittorrent 支持跳过校验",
-            "v1.8.1": "判断辅种失败的情况下，是否是由于token未进行站点绑定导致的",
-            "v1.8": "适配新版本IYUU开发版",
-            "v1.7": "适配馒头最新变化，需要升级至v1.8.5+版本且维护好Authorization",
-            "v1.6": "增加不辅种小体积种子功能",
-            "v1.5": "支持馒头新架构辅种"
+            "v1.9.5": "Revert qBittorrent跳检之后自动开始"
         }
     }
 }
