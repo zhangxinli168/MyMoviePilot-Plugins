@@ -530,7 +530,7 @@ class MyTorrentTransfer(_PluginBase):
             tag = StringUtils.generate_random_str(10)
             state = self.qb.add_torrent(content=content,
                                         download_dir=save_path,
-                                        is_paused=False,
+                                        is_paused=True,
                                         tag=["已整理", "转移做种", tag],
                                         is_skip_checking=True
                                         )
