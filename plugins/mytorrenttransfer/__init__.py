@@ -21,7 +21,7 @@ from app.utils.string import StringUtils
 
 class MyTorrentTransfer(_PluginBase):
     # 插件名称
-    plugin_name = "自动转移做种"
+    plugin_name = "My自动转移做种"
     # 插件描述
     plugin_desc = "定期转移下载器中的做种任务到另一个下载器。"
     # 插件图标
