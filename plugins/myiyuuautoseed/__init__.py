@@ -118,7 +118,8 @@ class MyIYUUAutoSeed(_PluginBase):
             self._size = float(config.get("size")) if config.get("size") else 0
             self._clearcache = config.get("clearcache")
             self._permanent_error_caches = [] if self._clearcache else config.get("permanent_error_caches") or []
-            self._error_caches = [] if self._clearcache else config.get("error_caches") or []
+            #self._error_caches = [] if self._clearcache else config.get("error_caches") or []
+            self._error_caches = [] #if self._clearcache else config.get("error_caches") or []
             self._success_caches = [] if self._clearcache else config.get("success_caches") or []
 
             # 过滤掉已删除的站点
@@ -664,11 +665,11 @@ class MyIYUUAutoSeed(_PluginBase):
             recheck_torrents = self._recheck_torrents.get(downloader) or []
             if not recheck_torrents:
                 continue
-            logger.info(f"开始检查下载器 {downloader} 的校验任务 ...")
-            # 下载器
+
             downloader_obj = self.__get_downloader("transmission")
             downloader="transmission"
-            
+            logger.info(f"开始检查下载器 {downloader} 的校验任务 ...")
+
             # 获取下载器中的种子状态
             torrents, _ = downloader_obj.get_torrents(ids=recheck_torrents)
             if torrents:
