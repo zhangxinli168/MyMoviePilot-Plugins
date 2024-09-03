@@ -78,6 +78,7 @@ class MyIYUUAutoSeed(_PluginBase):
         "//a[contains(@href, 'download.php?hash=')]/@href",
         "//a[contains(@href, 'download.php?id=')]/@href",
         "//a[@class='index'][contains(@href, '/dl/')]/@href",
+        "//a[contains(@href, 'download?id=')]/@href"
     ]
     # 待校全种子hash清单
     _recheck_torrents = {}
