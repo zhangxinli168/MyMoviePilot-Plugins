@@ -1192,6 +1192,7 @@ class MyIYUUAutoSeed(_PluginBase):
                                 download_url = f"{site.get('url')}{download_url}"
                         return download_url
                 logger.warn(f"获取种子下载链接失败，未找到下载链接：{page_url}")
+                logger.info(res.text)
                 return None
             else:
                 logger.error(f"获取种子下载链接失败，请求失败：{page_url}，{res.status_code if res else ''}")
